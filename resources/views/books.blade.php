@@ -4,7 +4,7 @@
 <!-- Bootstrapの定形コード… -->
 <div class="card-body">
   <div class="card-title">
-    自己診断
+    自己診断自己診断 git add -A
   </div>
 
   <!-- バリデーションエラーの表示に使用-->
