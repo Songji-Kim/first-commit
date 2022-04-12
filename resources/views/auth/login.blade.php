@@ -62,11 +62,15 @@
                                         {{ __('パスワードを忘れた方はこちら') }}
                                     </a>
                                 @endif
+                                
+                                
                             </div>
                         </div>
-                        
-                        <a href="{{ url('/register') }}" class="btn btn-primary">{{ __('会員登録がまだの方はこちら') }}</a>
-                        
+                        <div class="row mb-0">
+                            <div class="col-md-8 offset-md-4">
+                            <a href="{{ url('/register') }}" class="btn btn-link">{{ __('会員登録がまだの方は先にご登録ください') }}</a>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

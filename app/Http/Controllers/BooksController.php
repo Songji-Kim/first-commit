@@ -112,8 +112,9 @@ class BooksController extends Controller
      
     public function edit(Book $book)
     {
-
-        $books = Book::all();
+        $user_id = auth()->user()->id;
+        // dd($user_id);
+        $books = Book::all()->where("user_id",$user_id);
         return view('booksedit', compact('books'));
         
         return view('booksedit',[
