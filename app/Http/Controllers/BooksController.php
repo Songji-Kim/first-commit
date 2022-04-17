@@ -136,7 +136,8 @@ class BooksController extends Controller
             //  []はヤマト運輸でコントローラーからビューに持っていくよ
             // reagentsは相手(=ビューに渡った時の名前)、右側が荷物
         );
- 
+        
+
     }
 
     /**
@@ -194,5 +195,19 @@ class BooksController extends Controller
     public function __construct(){
         $this->middleware('auth');
     }
+
+    public function report(Book $book)
+    {
+        $user_id = auth()->user()->id;
+        // dd($user_id);
+        $books = Book::all()->where("user_id",$user_id);
+        return view('report', compact('books'));
+        
+        }
+
+
+
+
+
 
  }

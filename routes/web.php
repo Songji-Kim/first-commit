@@ -26,6 +26,9 @@ Route::post('books',[ BooksController::class,'store' ]);
 //「本」を更新画面表示
 Route::get('booksedit',[ BooksController::class,'edit' ]);
 
+//「本」を更新画面表示
+Route::get('report',[ BooksController::class,'report' ]);
+
 //「本」を更新処理
 Route::post('books/update',[ BooksController::class,'update' ]);
 
