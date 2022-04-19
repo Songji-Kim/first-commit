@@ -136,8 +136,6 @@ class BooksController extends Controller
             //  []はヤマト運輸でコントローラーからビューに持っていくよ
             // reagentsは相手(=ビューに渡った時の名前)、右側が荷物
         );
-        
-
     }
 
     /**
